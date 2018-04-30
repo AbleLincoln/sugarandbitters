@@ -1,0 +1,192 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  /* letter-spacing: 0.5px; */
+  margin: 0;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+span {
+  line-height: initial;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  /* background-image: url(vinesbg.png); */
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.bg#left {
+  background-image: url(vinesbgleft.png);
+  background-image: url(logo.png);
+  background-position: top left;
+  top: 30px;
+  left: 30px;
+  /* display: none; */
+}
+
+#logo {
+  position: absolute;
+  width: 20vw;
+  min-width: 200px;
+  top: 30px;
+  left: 30px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* tablet */
+@media screen and (max-width: 1000px) { 
+  #logo {
+    display: none;
+  }
+
+  .secondary-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  font-family: 'Playfair Display';
+  text-align: center;
+}
+
+.logo .headers {
+  display: inline-block;
+}
+
+.logo h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #ffbf00;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+
+  /* text-shadow: 0 0 7px #ffbf00, 0 0 7px #ffbf00, 0 0 9px #ffbf00, 0 0 10px #ffbf00, 0 0 12px #ffbf00; */
+}
+
+/* phone */
+@media screen and (max-width: 700px) {
+  .logo h1 {
+    font-size: 16vw;
+  }
+}
+
+.logo h3 {
+  text-align: right;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo h3 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo h3 {
+    font-size: 1.1em;
+  }
+}
+
+.nav {
+  /* margin: auto; */
+  margin-bottom: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+
+  justify-content: center;
+
+  padding: 0;
+}
+
+.nav ul li {
+  font-size: 1.2rem;
+  /* margin: 0 5px; */
+  padding: 0 15px;
+  border-right: 1px solid #ffdc73;
+  border-left: 1px solid #ffdc73;
+}
+
+.nav ul li:first-child {
+  border-left: none;
+}
+.nav ul li:last-child {
+  border-right: none;
+}
+
+.secondary-nav {
+  position: absolute;
+  right: 10%;
+  top: 30px;
+}
+
+.secondary-nav ul li {
+  font-size: 2rem;
+}
+
+.mobile-nav ul li {
+  font-size: 1.5rem;
+}
+
+.video {
+  text-align: center;
+}
+
+.video video, .video img {
+  margin: auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .video video, .video img {
+    width: 94%;
+  }
+}
+
+h2, .title {
+  font-family: 'Dancing Script', cursive;
+  color: #ffbf00;
+  font-weight: 100;
+  font-size: 5rem;
+  float: left;
+  margin-top: -3rem;
+  padding-right: 20px;
+  /* padding-bottom: 5px; */
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
